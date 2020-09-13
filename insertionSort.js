@@ -1,6 +1,6 @@
 //1. start by picking the second element in the array
 //2. Now compare the second element with the one before it and swap if necessary. 
-//3. Continue to the next element and it if is in the incorrect order, iterate through the sorted portion. (i.e. the left side) to place the element in the correct place. 
+//3. Continue to the next element and if it is in the incorrect order, iterate through the sorted portion. (i.e. the left side) to place the element in the correct place. 
 //4. repeat until the array is sorted. 
 
 
@@ -27,38 +27,38 @@ function insertion(arr){
 ////::::::: practice 09/12/2020 7:01 - 7:05 PM :::::: ///////////
 //////////////////////////////:::::::::::::::::///////////////////////
 
-function insertion(arr){
-    for(let i = 1; i < arr.length; i++){
-        let next = arr[i];
-        let greatIdx = i - 1;
-        while((greatIdx >= 0) && (arr[greatIdx] > next)){
-            arr[greatIdx+1] = arr[greatIdx]
-            greatIdx--
-        }
-        arr[greatIdx] = next;
-    }
-    return arr
-}
+// function insertion(arr){
+//     for(let i = 1; i < arr.length; i++){
+//         let next = arr[i];
+//         let greatIdx = i - 1;
+//         while((greatIdx >= 0) && (arr[greatIdx] > next)){
+//             arr[greatIdx+1] = arr[greatIdx]
+//             greatIdx--
+//         }
+//         arr[greatIdx+1] = next;
+//     }
+//     return arr
+// }
 
 //////////////////////////////:::::::::::::::::///////////////////////
 ////::::::: practice 09/12/2020 6:51 - 7:02 PM :::::: ///////////
 //////////////////////////////:::::::::::::::::///////////////////////
 
-function insertion (arr){
-    for(let i = 1; i <arr.length; i++){
-        let next = arr[i];
-        let greatIdx = i-1;
+// function insertion (arr){
+//     for(let i = 1; i <arr.length; i++){
+//         let next = arr[i];
+//         let greatIdx = i-1;
 
-        while((greatIdx >= 0) && (arr[greatIdx] > next)){
-            arr[greatIdx + 1]  = arr[greatIdx]
-            greatIdx--
-        }
+//         while((greatIdx >= 0) && (arr[greatIdx] > next)){
+//             arr[greatIdx + 1]  = arr[greatIdx]
+//             greatIdx--
+//         }
         
-        arr[greatIdx + 1] = next
-        //julia assager
-    }
-    return arr
-}
+//         arr[greatIdx + 1] = next
+//         //julia assager
+//     }
+//     return arr
+// }
 
 //////////////////////////////:::::::::::::::::///////////////////////
 ////::::::: practice 09/12/2020 6:48PM :::::: ///////////
