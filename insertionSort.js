@@ -17,7 +17,7 @@ function insertion(arr){
         while((greatIdx >=0) && (arr[greatIdx] > next)){
             arr[greatIdx+1] = arr[greatIdx]
             greatIdx--
-        }
+         }
         arr[greatIdx+1] = next
     }
     return arr
